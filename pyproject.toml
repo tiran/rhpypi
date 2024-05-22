@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=64", "setuptools_scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rhpypi"
+authors = [
+    { name="Christian Heimes", email="cheimes@redhat.com" },
+]
+description = ""
+license = {text = "Apache-2.0"}
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: Apache Software License",
+    "Environment :: Console",
+    "Programming Language :: Python :: 3",
+]
+dynamic = ["version"]
+
+[tool.setuptools_scm]
+
+[project.urls]
+Homepage = "https://github.com/tiran/rhpypi"
+Issues = "https://github.com/tiran/rhpypi/issues"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
